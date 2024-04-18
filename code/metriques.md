@@ -8,6 +8,10 @@ Bien que des [outils d'analyses](./analysis.md) et des tests aient été mis en 
 
 1. Doit rapporter **toutes** les erreurs de votre code, sauf celles générées par Jersey (ex: 404 de route non-existante). L'utilisation d'un *exception mapper* pourrait grandement vous aider.
 2. Utilisez la variable d'environnement `SENTRY_DSN` pour la valeur du DSN, puisqu'il s'agit d'une **donnée sensible**.
-3. Ne **pas** utiliser le plugin `sentry-maven-plugin`, cela risque de bloquer la correction automatique (besoin d'une clée d'API). Utilisez plutôt la dépendance de code `sentry-java`.
+3. Ne **pas** utiliser le plugin `sentry-maven-plugin`, cela risque de bloquer la correction automatique (besoin d'une clée d'API). Utilisez plutôt la dépendance de code `sentry`.
 
 Incluez des captures d'écran de rapports de bogues sommaires et détaillées dans votre fichier d'exercice. On ne vous demande pas de régler les problèmes identifiés, sauf s'ils sont des critères d'évaluations demandés dans les énoncés.
+
+### Changelog
+
+- **18 avril**: Correction du nom de la dépendance pour Sentry.
